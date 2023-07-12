@@ -14,3 +14,6 @@ jobs:
       - name: Print GHAction variables
         run: |
           echo "github.ref_name: ${{ github.ref_name }}"
+          echo "github.event.pull_request.number: ${{ github.event.pull_request.number }}"
+          echo "github.event.number: ${{ github.event.number }}"
+
